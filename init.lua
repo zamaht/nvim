@@ -1,2 +1,1 @@
 require("lua/config/lazy")
-

@@ -1,3 +1,3 @@
-require("lua/config/lazy")
 require("lua/config/vim")
+require("lua/config/lazy")
 

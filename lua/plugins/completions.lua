@@ -1,7 +1,11 @@
 return {
 	{
 		"L3MON4D3/LuaSnip",
-		dependencies = { "saadparwaiz1/cmp_luasnip", "rafamadriz/friendly-snippets" },
+		dependencies = {
+			"saadparwaiz1/cmp_luasnip",
+			"rafamadriz/friendly-snippets",
+			"mlaursen/vim-react-snippets",
+		},
 	},
 	{
 		"hrsh7th/cmp-nvim-lsp",

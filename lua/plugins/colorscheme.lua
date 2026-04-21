@@ -12,6 +12,7 @@ return {
 					lazy = true,
 					mason = true,
 					cmp = true,
+					opencode = true,
 				},
 			})
 			vim.cmd.colorscheme("catppuccin-macchiato")

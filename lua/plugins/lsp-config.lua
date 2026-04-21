@@ -82,7 +82,7 @@ return {
 				capabilities = capabilities,
 				handlers = handlers,
 			})
-			vim.lsp.config("ts_ls", {
+			vim.lsp.config("tsgo", {
 				capabilities = capabilities,
 				handlers = handlers,
 			})

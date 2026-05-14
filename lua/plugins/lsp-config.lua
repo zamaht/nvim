@@ -1,9 +1,9 @@
 return {
-	{
-		"mrcjkb/rustaceanvim",
-		version = "^7", -- Recommended
-		lazy = false, -- This plugin is already lazy
-	},
+	-- {
+	-- 	"mrcjkb/rustaceanvim",
+	-- 	version = "^7", -- Recommended
+	-- 	lazy = false, -- This plugin is already lazy
+	-- },
 	{
 		"mason-org/mason.nvim",
 		config = function()
@@ -97,6 +97,14 @@ return {
 			vim.lsp.config("cssls", {
 				capabilities = capabilities,
 				handlers = handlers,
+				settings = {
+					{
+						validate = true,
+						lint = {
+							unknownAtRules = "ignore",
+						},
+					},
+				},
 			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "shows the status of the hovered elt" })
